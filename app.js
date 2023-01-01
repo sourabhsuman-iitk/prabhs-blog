@@ -18,7 +18,7 @@ var indexRoutes = require("./routes/index");
 var userRoutes = require("./routes/users")
 
 require('dotenv').config();
-const port = process.env.PORT || 5000;
+const port = process.env.PORT || 3000;
 const uri = process.env.ATLAS_URI;
 mongoose.connect(uri, { useNewUrlParser: true, useUnifiedTopology: true , useCreateIndex: true, useFindAndModify: false });
 
@@ -64,5 +64,5 @@ app.use(function(req, res, next){
 });
 
 app.listen(port, () => {
-    console.log('Yelpcamp has started on port');
+    console.log('Yelpcamp has started on port', port);
 });
