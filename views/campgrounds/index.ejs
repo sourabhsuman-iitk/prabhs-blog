@@ -28,7 +28,6 @@
                 <a class="more-info-button" href="/blogs/<%= campground.slug%>">Read More</a>
                 <div class="card-author">Submitted By <a class="author" href="/users/<%= campground.author.id %>">
                     <strong><%= campground.author.username %></strong></a> <br><span class="card-date"><%= campground.createdAt.toLocaleDateString() %></span>
-                    <span class="card-tag">#<%= campground.tag %></span>
                 </div>
                         
             </div>
