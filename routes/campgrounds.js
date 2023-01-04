@@ -19,10 +19,10 @@ var upload = multer({ storage: storage, fileFilter: imageFilter})
 
 
 var cloudinary = require('cloudinary');
-cloudinary.config({ 
-  cloud_name: 'blah', 
-  api_key: 'blah', 
-  api_secret:'blah-blah'
+cloudinary.config({
+  cloud_name: "sdevblog",
+  api_key: "584478888598275",
+  api_secret: "YZzItDXxrl9DL9T34cE-Xgofdjs",
 });
 
 
