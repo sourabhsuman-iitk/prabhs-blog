@@ -1,14 +1,15 @@
 <%- include('../partials/header'); -%>
 
 <main class="show-main">
-  <div>
+  <div class="blog-container">
     <div class="section-heading"><%= campground.name %></div>
     <section class="post-section">
       <div class="image-section">
-        <div
+        <img class="blog-image" src="<%= campground.image %>" alt="img" />
+        <!-- <div
           class="post-image"
           style="background-image: url('<%= campground.image %>')"
-        ></div>
+        ></div> -->
       </div>
       <hr />
       <div class="post-content">
